@@ -1,0 +1,423 @@
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+
+    function myFunction(url) {
+        window.open(url);
+    }
+
+</script>
+<script>
+
+
+    $(document).ready(function () {
+        var url = document.location.toString();
+        if (url.match('#')) {
+            var hash = '#' + url.split('#')[1];
+
+            var tab = $("#myTab a[href=\"" + this.hash + "\"]");
+            tab = $("a[href='" + hash + "']");
+            var link = '#' + tab.attr("id");
+
+            tab
+                .closest(".nav")
+                .find("a")
+                .removeClass("active")
+                .end()
+                .attr("aria-selected", false);
+
+            tab
+                .addClass("active")
+                .attr("aria-selected", true);
+
+            $("#quaterly-reports").removeClass("active show");
+            $(hash).addClass("active show");
+        }
+    });
+
+//--><!]]>
+</script>
+
+<style type="text/css">
+    <!--/*
+    -->
+<![CDATA[/* ><!--*/
+
+    .about-page-container .financial-report-page .tab-content .h-title h4 {
+        border-bottom: 2px solid #e4e4e4;
+    }
+
+    .financial-report-page .tab-pane .h-title h4 {
+        font-size: 32px;
+    }
+
+    .about-page-container .financial-report-page .tab-content .btn span {
+        font-size: 18px;
+    }
+
+    .about-page-container ul.ul-list-styles {
+        list-style: disc;
+        color: #0091ff;
+        padding-left: 30px;
+    }
+
+    .about-page-container .financial-report-page ul.ul-list-styles,
+    .about-page-container .news-details .details-content {
+        padding-bottom: 40px;
+    }
+
+    .about-page-container .financial-report-page .tab-content ul li a {
+        font-size: 20px;
+    }
+
+    .about-page-container .financial-report-page #annual-reports .card-body h4 {
+        font-size: 32px;
+    }
+
+    .static-pages .taber ul li a {
+        color: #C4C4C4;
+        font-size: 24px;
+    }
+
+    .static-pages .taber ul li a.active:after {
+        width: 115%;
+        margin-right: -11px;
+    }
+
+    .static-pages .taber ul li a:after {
+        border-bottom: unset;
+    }
+
+
+    .static-pages .financial-report-page .tab-content ul li a {
+        height: 27px;
+        width: 563px;
+        color: #0091FF;
+        font-family: "Open Sans";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 27px;
+    }
+
+    .col-12.h-title.text-center h2 {
+        padding-bottom: 1rem;
+    }
+
+    .col-6.col-md-3.col-lg-3.mb-5 li {
+        padding: 0.3rem 0;
+    }
+
+    .static-pages .taber ul li a:after {
+        border-bottom: none;
+    }
+
+    .static-pages .taber ul li a:after {
+        background: linear-gradient(to right, #E14A32 0%, #9F215D 100%) left bottom #777 no-repeat;
+        background-size: 100% 10px;
+        padding-top: 3px;
+    }
+
+    .btn {
+        letter-spacing: unset;
+    }
+
+    /*@media (max-width: 440px) {
+    .taber ul li a {
+        font-size: 19px !important;
+    }
+
+    .static-pages .financial-report-page .tab-content ul li a {
+        font-size: 16px !important;
+    }
+}*/
+
+    @media (max-width: 768px) {
+        .static-pages .taber ul li {
+            text-align: center;
+        }
+
+        .static-pages .taber ul li a {
+            font-size: 20px;
+        }
+
+        .static-pages .taber ul li a.active:after {
+            width: 100%;
+            margin-right: unset;
+        }
+    }
+
+
+    @media (max-width: 440px) {
+
+        /* a.active {
+            text-align: center;
+        } */
+
+        .static-pages .taber ul li {
+            padding: 0px 10px;
+            text-align: center;
+        }
+
+        .static-pages .taber ul li a.active:after {
+            width: 80%;
+            margin-right: 11px;
+        }
+
+        .static-pages .taber ul li a {
+            font-size: 16px;
+        }
+
+        /* .static-pages .taber ul li a.active:after {
+            width: 80%; 
+
+        } */
+    }
+
+    @media (max-width: 376px) {
+        .taber ul li a {
+            font-size: 14px !important;
+        }
+
+        .static-pages .taber ul li {
+            padding: 0px 10px;
+        }
+
+
+        .static-pages .financial-report-page .tab-content ul li a {
+            font-size: 16px !important;
+        }
+
+        .col-12.h-title.text-center h2 {
+            font-size: 24px;
+        }
+
+        .financial-report-page .tab-pane .h-title h4 {
+            font-size: 24px
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        .static-pages .section-content {
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        .col-6.col-md-3.col-lg-3.mb-5 li {
+            padding: 0.2rem 0;
+        }
+
+        .static-pages .taber ul li a.active:after {
+            margin-right: 6px;
+            width: 85%;
+        }
+
+        .static-pages .taber ul li a {
+            text-align: center;
+        }
+
+
+    }
+
+/*--><!]]>*/
+</style>
+
+<div class="static-pages">
+    <div class="container-fluid about-page-container">
+        <div class="row">
+            <div class="col-12 section-content">
+                <div class="row">
+                    <div class="container" style="
+    max-width: 1400px;
+">
+                        <div class="row">
+                            <div class="col-12 financial-report-page">
+                                <div class="row">
+                                    <div class="col-12 h-title  text-center">
+                                        <h1>Sustainability Reports</h1>
+                                    </div>
+
+                                    <div aria-label="filterImages" class="col-12 taber" role="group">
+                                        <!-- Nav tabs -->
+                                        <hr style="
+    height: 2px;
+">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="tab-content">
+
+
+                                            <div class="tab-pane fade active show" id="annual-reports" role="tabpanel">
+                                                <div class="col-12 mt-4">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2019</h4>
+                                                                    <img alt="2019-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2019-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2019-annual-report_0.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2019-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2018</h4>
+                                                                    <img alt="2018-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2018-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2018-annual-report_0.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2018-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2017</h4>
+                                                                    <img alt="2017-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2017-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2017-annual-report_0.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2017-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2016</h4>
+                                                                    <img alt="2016-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2016-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2016-annual-report_0.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2016-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2015</h4>
+                                                                    <img alt="2015-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2015-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2015-annual-report_0.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2015-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2014</h4>
+                                                                    <img alt="2014-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2014-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2014-annual-report-en.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2014-annual-report-en.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2013</h4>
+                                                                    <img alt="2013-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2018-annual-report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2013-annual-report.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2013-annual-report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 col-lg-3 mb-5 text-center">
+                                                            <div class="card text-center level-3">
+                                                                <div class="card-body">
+                                                                    <h4 class="mb-4">2012</h4>
+                                                                    <img alt="2012-annual-report" class="img-fluid mb-2"
+                                                                        data-entity-type="" data-entity-uuid=""
+                                                                        src="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2012_annual_report.jpg">
+                                                                    <a class="btn btn-link non-styled-link default-link px-0"
+                                                                        download=""
+                                                                        href="https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/2012_annual_report.pdf"
+                                                                        onclick="myFunction(&quot;https://s3.ap-southeast-1.amazonaws.com/dlg.dialog.lk/s3fs-public/2020-11/ro_2012_annual_report.pdf&quot;)"><img
+                                                                            alt="download-icon-default"
+                                                                            data-entity-type="" data-entity-uuid=""
+                                                                            src="https://dialog-stg-bucket.s3.ap-southeast-1.amazonaws.com/s3fs-public/2020-11/download-icon-default_0.png">
+                                                                        <span>Download PDF</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

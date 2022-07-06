@@ -1,0 +1,112 @@
+.about-page-container h1{
+	font-size:56px;
+}
+.about-page-container h2{
+	font-size:48px;
+}
+.about-page-container h3{
+	font-size:36px;
+}
+.about-page-container h4{
+	font-size:28px;
+}
+.about-page-container h5{
+	font-size:24px;
+}
+.about-page-container h6{
+	font-size:20px;
+}
+.about-page-container p.type-1{
+    font-size: 18px;
+}
+.about-page-container p.type-2{
+    font-size: 16px;
+}
+.about-page-container p.type-3{
+    font-size: 14px;
+}
+.about-page-container .text-white{
+	color:#fff;
+}
+.about-page-container .text-gray {
+    color: #757575;
+}
+.about-page-container .font-18{
+	font-size:18px;
+}
+.about-page-container .font-16{
+	font-size:16px;
+}
+.about-page-container .font-14{
+	font-size:14px;
+}
+.about-page-container .font-weight-semibold{
+	font-weight:600;
+}
+@media (max-width: 991px){
+	.about-page-container h1{
+		font-size:48px;
+	}
+	.about-page-container h2{
+		font-size:36px;
+	}
+	.about-page-container h3{
+		font-size:28px;
+	}
+	.about-page-container h4{
+		font-size:24px;
+	}
+	.about-page-container h5{
+		font-size:20px;
+	}
+	.about-page-container h6{
+		font-size:18px;
+	}
+}
+@media (min-width: 768px){
+	.about-page-container .btn,.about-page-container .btn.btn-sm {
+		font-size: 16px;
+	}
+}
+@media (max-width: 767px){
+	.about-page-container h1{
+		font-size:32px;
+	}
+	.about-page-container h2{
+		font-size:28px;
+	}
+	.about-page-container h3{
+		font-size:24px;
+	}
+	.about-page-container h4{
+		font-size:20px;
+	}
+	.about-page-container h5{
+		font-size:18px;
+	}
+	.about-page-container h6{
+		font-size:16px;
+	}
+	.about-page-container p.type-1{
+		font-size: 16px;
+	}
+	.about-page-container p.type-2{
+		font-size: 16px;
+	}
+	.about-page-container p.type-3{
+		font-size: 14px;
+	}
+	.about-page-container .font-18{
+		font-size:16px;
+	}
+	.about-page-container .font-16{
+		font-size:16px;
+	}
+	.about-page-container .font-14{
+		font-size:14px;
+	}
+	.about-page-container .btn,.about-page-container .btn.btn-sm {
+		font-size: 14px;
+		padding: 0.480rem 1rem;
+	}
+}
